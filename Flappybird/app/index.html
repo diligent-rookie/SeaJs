@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlappyBird</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<canvas id="cvs" width="800" height="600" style="border: 1px solid black;"></canvas>
+<script type='text/javascript' src='../sea-modules/seajs/seajs/2.2.0/sea.js'></script>
+<script type='text/javascript'>
+    var cvs = document.getElementById('cvs');
+    var ctx = cvs.getContext('2d');
+ // Set configuration 做一些简单的配置
+  seajs.config({
+    //配置了基础目录
+    base: "../sea-modules/",
+    alias: {
+      "jquery": "../sea-modules/jquery/jquery/1.10.1/jquery.js"
+    }
+  });
+  //引入入口模块
+seajs.use("../static/load_imgs.js");
+</script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+介绍sea.js的使用说明：
+在首页引入sea.js文件，构建js的入口，将每个有相互依赖的js文件利用define（require,exports,module）等相互关联，require引入利用exports将用到的方法输入

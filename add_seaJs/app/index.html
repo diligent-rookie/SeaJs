@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type='text/javascript' src='../sea-modules/seajs/seajs/2.2.0/sea.js'></script>
+</head>
+<body>
+	<input type="text" name='' value='1' id='v1'>
+	<input type="text" name='' value='2' id='v2'>
+</body>
+	<script type='text/javascript'>
+		seajs.use('../static/index.js',function(cal){
+			console.log(cal.add2());
+		});
+	</script>
+</html>

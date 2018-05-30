@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    	div{
+    		width: 200px;
+    		height: 200px;
+    		background-color: red;
+    		margin:100px auto;
+    	}
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+<script src="../sea-modules/seajs/seajs/2.2.0/sea.js"></script>
+<script>
+
+  // Set configuration 做一些简单的配置
+  seajs.config({
+    //配置了基础目录
+    base: "../sea-modules/",
+    //别名，外号
+    alias: {
+      "jquery": "jquery/jquery/1.10.1/jquery.js"
+    }
+  });
+  //引入入口模块
+  //返回值没有进入首页
+seajs.use("../static/index2.js");
+</script>
+</html>
